@@ -1,3 +1,17 @@
-h1 {
-  color: #999;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.first-bar {
+  background-color: #212529;
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
