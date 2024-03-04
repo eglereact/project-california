@@ -87,6 +87,12 @@
   width: 860px;
 }
 
+.icons::before {
+  content: "\F825";
+  font-family: "bootstrap-icons";
+  font-size: 20px;
+}
+
 .icons > p {
   padding-left: 14px;
 }
@@ -104,6 +110,13 @@
   background-color: #f2f2f2;
   color: #121212;
   cursor: pointer;
+  width: 0px;
+}
+
+.lang::after {
+  content: "\F825";
+  font-family: "bootstrap-icons";
+  font-size: 30px;
 }
 
 /* banner */
@@ -270,6 +283,113 @@
   line-height: 1.8;
 }
 
+/* gallery  */
+.gallery-container {
+  display: flex;
+  max-width: 2000px;
+  margin: auto;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  flex-direction: column;
+}
+
+.gallery-container > h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px 8px;
+  margin: 0 30px;
+}
+
+.gallery-card {
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.product-image > img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.product-image {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  overflow: hidden;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.first {
+  position: relative;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  display: block;
+}
+.first:hover {
+  opacity: 0;
+}
+
+.second {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.second:hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+.product-info {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.buy > p {
+  text-transform: uppercase;
+  color: #1891cb;
+}
+
+.buy > p:hover {
+  text-decoration: underline;
+}
+
+.start-price {
+  text-decoration: line-through;
+  padding-right: 5px;
+}
+
+.sale,
+.sale-info {
+  color: #ff555d;
+}
+
+.sale-info:hover {
+  text-decoration: underline;
+}
+
 /* responsive */
 
 @media only screen and (max-width: 960px) {
@@ -294,6 +414,10 @@
 
   .number-text > p {
     width: 100%;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -331,5 +455,11 @@
 
   .numbers {
     grid-template-columns: auto;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
   }
 }
