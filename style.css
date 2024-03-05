@@ -475,6 +475,24 @@
   .gallery {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .collection-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-item {
+    width: 100%;
+  }
+
+  .item-container.home-item > img {
+    height: 390px;
+    margin-bottom: 10px;
+  }
+
+  .necklaces-sale-container {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 620px) {
@@ -511,6 +529,23 @@
 
   .numbers {
     grid-template-columns: auto;
+  }
+
+  .necklaces-sale-container {
+    flex-direction: column;
+  }
+
+  .other-item {
+    width: 100%;
+  }
+
+  .item-container.other-item > img {
+    height: 390px;
+  }
+
+  .white-box {
+    bottom: 20px;
+    right: 30px;
   }
 }
 
