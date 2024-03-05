@@ -462,4 +462,9 @@
   .gallery {
     grid-template-columns: 1fr 1fr;
   }
+
+  .product-info {
+    flex-direction: column-reverse;
+    align-items: start;
+  }
 }
