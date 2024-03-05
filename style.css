@@ -394,6 +394,58 @@
   text-decoration: underline;
 }
 
+/* Home Goods Necklaces On Sale */
+
+.collection-container {
+  max-width: 2000px;
+  padding: 0 30px;
+  margin: auto;
+  display: flex;
+}
+
+.item-container > img {
+  height: 330px;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.item-container {
+  position: relative;
+  height: auto;
+  cursor: pointer;
+}
+
+.home-item {
+  width: 33.333%;
+  margin-right: 10px;
+}
+
+.other-item {
+  width: 50%;
+}
+
+.necklaces-sale-container {
+  display: flex;
+  width: 66.666%;
+  gap: 10px;
+}
+
+.white-box {
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ffffffbf;
+}
+
+.white-box > p {
+  padding: 30px;
+}
+
 /* responsive */
 
 @media only screen and (max-width: 960px) {
