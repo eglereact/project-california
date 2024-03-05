@@ -87,20 +87,30 @@
   width: 860px;
 }
 
-.icons::before {
-  content: "\F825";
-  font-family: "bootstrap-icons";
-  font-size: 20px;
-}
-
 .icons > p {
   padding-left: 14px;
 }
 
 .menu-icon > i {
-  font-size: 20px;
+  font-size: 24px;
   color: #121212;
   cursor: pointer;
+}
+
+.lang-container::before {
+  content: "\F3EE";
+  font-family: "bootstrap-icons";
+  font-size: 20px;
+}
+
+.lang-container {
+  background-color: #f2f2f2;
+  width: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 0;
+  border-radius: 20px;
 }
 
 .lang {
@@ -110,13 +120,7 @@
   background-color: #f2f2f2;
   color: #121212;
   cursor: pointer;
-  width: 0px;
-}
-
-.lang::after {
-  content: "\F825";
-  font-family: "bootstrap-icons";
-  font-size: 30px;
+  width: 20px;
 }
 
 /* banner */
