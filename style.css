@@ -446,6 +446,29 @@
   padding: 30px;
 }
 
+/* sale card section */
+.sale-card-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 30px auto;
+  gap: 30px;
+  width: 100%;
+  padding: 0 30px;
+}
+
+.big-card {
+  width: 68%;
+  display: flex;
+}
+
+.smaller-card-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
 /* responsive */
 
 @media only screen and (max-width: 960px) {
@@ -492,6 +515,14 @@
 
   .necklaces-sale-container {
     width: 100%;
+  }
+
+  .sale-card-container {
+    gap: 20px;
+  }
+
+  .smaller-card-container {
+    gap: 20px;
   }
 }
 
@@ -546,6 +577,20 @@
   .white-box {
     bottom: 20px;
     right: 30px;
+  }
+
+  .sale-card-container {
+    flex-direction: column;
+    padding: 0 30px;
+  }
+
+  .big-card {
+    width: 100%;
+  }
+
+  .smaller-card-container {
+    width: 100%;
+    gap: 30px;
   }
 }
 
