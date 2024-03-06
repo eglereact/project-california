@@ -469,6 +469,60 @@
   gap: 30px;
 }
 
+/*  Modern and Ethical section  */
+.modern-ethical-container {
+  max-width: 2000px;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  gap: 30px;
+}
+
+.modern,
+.ethical {
+  height: 334px;
+  position: relative;
+}
+
+.modern > img,
+.ethical > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.me-white-box {
+  position: absolute;
+  bottom: 30px;
+  top: 30px;
+  display: flex;
+  padding: 60px;
+  width: 400px;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffffbf;
+}
+
+.me-white-box > h2 {
+  font-size: 32px;
+}
+
+.me-white-box > p {
+  margin-top: 30px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.modern-box {
+  left: 30px;
+}
+
+.ethical-box {
+  right: 30px;
+}
+
 /* responsive */
 
 @media only screen and (max-width: 960px) {
@@ -591,6 +645,27 @@
   .smaller-card-container {
     width: 100%;
     gap: 30px;
+  }
+
+  .modern,
+  .ethical {
+    height: auto;
+    position: static;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modern > img,
+  .ethical > img {
+    height: 370px;
+  }
+
+  .me-white-box {
+    position: static;
+    padding: 40px;
+    width: 100%;
+    background: #f3f3f3;
+    text-align: center;
   }
 }
 
