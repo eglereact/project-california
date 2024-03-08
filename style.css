@@ -647,6 +647,8 @@ article > p {
   cursor: pointer;
 }
 
+/* Item add-to-cart information section */
+
 .single-item-cart-container {
   max-width: 2000px;
   margin: 50px auto;
@@ -847,6 +849,11 @@ summary {
 }
 details {
   background: transparent;
+  width: 100%;
+}
+
+details > p {
+  padding: 0 10px;
 }
 
 details[open] summary {
@@ -854,14 +861,32 @@ details[open] summary {
 }
 
 details[open] {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .question-icon {
   padding-right: 10px;
 }
 
-.question:last-child {
+/* FAQ */
+
+.FAQ-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 0 10px;
+}
+
+.FAQ-container > h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+details:last-child {
   border-bottom: 1px solid #121212;
 }
 
