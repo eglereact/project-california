@@ -890,6 +890,32 @@ details:last-child {
   border-bottom: 1px solid #121212;
 }
 
+/* As featured in section */
+.featured-container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 2000px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featured-container > h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.logos {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.logos > img {
+  width: 100px;
+}
 /* responsive */
 
 @media only screen and (max-width: 960px) {
