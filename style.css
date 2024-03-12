@@ -1095,6 +1095,25 @@ footer {
   color: #fff;
 }
 
+.footer-lang > button {
+  padding: 10px;
+  background-color: transparent;
+  color: #b1b1b1;
+  border-radius: 6px;
+  border: 1px solid #b1b1b1;
+  font-size: 18px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer-lang > button:hover {
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #fff;
+  text-decoration: underline;
+}
+
 /* responsive */
 
 @media only screen and (max-width: 960px) {
