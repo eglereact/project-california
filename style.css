@@ -97,13 +97,13 @@
   cursor: pointer;
 }
 
-.lang-container::before {
+/* .lang-container::before {
   content: "\F3EE";
   font-family: "bootstrap-icons";
   font-size: 20px;
-}
+} */
 
-.lang-container {
+/* .lang-container {
   background-color: #f2f2f2;
   width: 64px;
   display: flex;
@@ -111,9 +111,9 @@
   justify-content: center;
   padding: 4px 0;
   border-radius: 20px;
-}
+} */
 
-.lang {
+/* .lang {
   border: none;
   padding: 5px;
   border-radius: 10px;
@@ -121,6 +121,84 @@
   color: #121212;
   cursor: pointer;
   width: 20px;
+} */
+
+.menu-lang-btn {
+  background-color: #f2f2f2;
+  width: 64px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 0;
+  border-radius: 20px;
+  border: 0;
+  cursor: pointer;
+}
+
+.globe {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.lang-arrow {
+  font-size: 10px;
+  margin-top: 3px;
+  color: #82899f;
+}
+
+.menu-lang-btn:hover > .lang-arrow {
+  color: #121212;
+}
+
+.menu-btn-box {
+  width: 140px;
+  background-color: #eeeeee;
+  display: none;
+  margin: 10px 0;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 10;
+  margin-left: -75px;
+}
+
+.menu-btn-show {
+  display: block;
+}
+
+.menu-btn-box > ul {
+  list-style-type: none;
+}
+
+.menu-btn-box > ul > li {
+  border-bottom: 1px solid #eeeeee;
+  font-size: 18px;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+.menu-btn-box > ul > li:hover {
+  cursor: pointer;
+  background-color: #dddddd;
+}
+
+.menu-btn-box > ul > li:first-child:hover {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.menu-btn-box > ul > li:last-child:hover {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.menu-btn-box > ul > li:last-child {
+  border-bottom: none;
+}
+
+.menu-btn-box > ul > li > a {
+  text-decoration: none;
+  color: #121212;
 }
 
 /* banner */
@@ -1153,6 +1231,21 @@ footer {
   display: block;
 }
 
+.btn-box > ul > li:hover {
+  cursor: pointer;
+  background-color: #dddddd;
+}
+
+.btn-box > ul > li:first-child:hover {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.btn-box > ul > li:last-child:hover {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
 /* responsive */
 
 @media only screen and (max-width: 960px) {
@@ -1219,7 +1312,11 @@ footer {
 }
 
 @media only screen and (max-width: 620px) {
-  .icons > select {
+  /* .icons > select {
+    display: none;
+  } */
+
+  .menu-lang-btn {
     display: none;
   }
 
