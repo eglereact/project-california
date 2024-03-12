@@ -950,6 +950,8 @@ details:last-child {
   line-height: 24px;
 }
 
+/* Subscribe section */
+
 .subscribe-container {
   max-width: 2000px;
   margin: 0 auto;
@@ -1013,6 +1015,86 @@ input {
   background-color: #1f1f1f;
 }
 
+/* Subscribe section */
+
+footer {
+  background-color: #121212;
+  color: #fff;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 50px 30px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-top > div {
+  flex: 1;
+}
+
+.footer-top > div > p {
+  color: #b1b1b1;
+}
+
+.footer-top > div > h3 {
+  margin-bottom: 15px;
+}
+
+.footer-top > div > ul {
+  list-style-type: none;
+}
+
+.footer-top > div > ul > li > a {
+  color: #b1b1b1;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 35px;
+}
+
+.footer-top > div > ul > li > a > i {
+  padding-right: 10px;
+}
+
+.footer-top > div > ul > li > a:hover {
+  color: #fff;
+}
+
+.footer-socials {
+  column-count: 2;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.footer-bottom > div > p {
+  color: #b1b1b1;
+  line-height: 22px;
+  font-size: 16px;
+}
+
+.footer-bottom > div > p:first-child {
+  margin-bottom: 10px;
+}
+
+.footer-bottom > div > p > a {
+  color: #b1b1b1;
+  text-decoration: none;
+}
+.footer-bottom > div > p > a:hover {
+  color: #fff;
+}
+
 /* responsive */
 
 @media only screen and (max-width: 960px) {
@@ -1067,6 +1149,14 @@ input {
 
   .smaller-card-container {
     gap: 20px;
+  }
+
+  .footer-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-top > div {
+    margin-bottom: 30px;
   }
 }
 
@@ -1183,6 +1273,26 @@ input {
   .subscribe {
     flex-direction: column;
     width: 100%;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .footer-bottom {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-bottom > div > p:first-child {
+    display: none;
+  }
+
+  .footer-lang {
+    margin-bottom: 20px;
   }
 }
 
