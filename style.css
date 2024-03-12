@@ -1095,6 +1095,10 @@ footer {
   color: #fff;
 }
 
+.footer-lang {
+  position: relative;
+}
+
 .footer-lang > button {
   padding: 10px;
   background-color: transparent;
@@ -1105,6 +1109,7 @@ footer {
   display: flex;
   gap: 10px;
   align-items: center;
+  width: 140px;
 }
 
 .footer-lang > button:hover {
@@ -1112,6 +1117,40 @@ footer {
   cursor: pointer;
   border: 1px solid #fff;
   text-decoration: underline;
+}
+
+.btn-box {
+  width: 140px;
+  background-color: #eeeeee;
+  display: none;
+  margin: 5px 0;
+  border-radius: 5px;
+  position: absolute;
+  margin-top: -220px;
+}
+
+.btn-box > ul {
+  list-style-type: none;
+}
+
+.btn-box > ul > li {
+  border-bottom: 1px solid #dddddd;
+  font-size: 18px;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+.btn-box > ul > li:last-child {
+  border-bottom: none;
+}
+
+.btn-box > ul > li > a {
+  text-decoration: none;
+  color: #121212;
+}
+
+.show-lang-btn {
+  display: block;
 }
 
 /* responsive */
@@ -1312,6 +1351,10 @@ footer {
 
   .footer-lang {
     margin-bottom: 20px;
+  }
+
+  .btn-box {
+    text-align: start;
   }
 }
 
