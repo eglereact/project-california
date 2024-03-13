@@ -795,7 +795,8 @@ article > p {
 
 .single-item-info,
 .single-item-images {
-  width: 435px;
+  max-width: 435px;
+  width: 100%;
   /* height: auto; */
   padding: 30px 0;
 }
@@ -895,7 +896,7 @@ article > p {
 }
 
 .buy-it-now {
-  /* padding: 15px 20px; */
+  padding: 15px 20px;
   border-radius: 2px;
   text-transform: uppercase;
   width: 100%;
@@ -908,6 +909,9 @@ article > p {
   border: 2px solid #1ba1e2;
   background: transparent;
   color: #1ba1e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .add-to-cart-btn:hover {
@@ -960,6 +964,10 @@ details[open] {
 
 .question-icon {
   padding-right: 10px;
+}
+
+.carusel-btns {
+  display: none;
 }
 
 /* FAQ */
@@ -1324,6 +1332,12 @@ footer {
   .footer-top > div {
     margin-bottom: 30px;
   }
+
+  .shop-btn {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
 }
 
 @media only screen and (max-width: 620px) {
@@ -1469,9 +1483,58 @@ footer {
     text-align: start;
   }
 
-  /* .single-item-cart {
+  .single-item-cart {
     flex-direction: column;
-  } */
+    gap: 0;
+  }
+
+  .single-item-images {
+    width: auto;
+    max-width: 1000px;
+  }
+
+  .single-item-info {
+    padding-top: 0;
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .dot {
+    font-size: 10px;
+  }
+
+  .carusel-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #bababa;
+  }
+
+  .carusel-btns > i {
+    cursor: pointer;
+  }
+
+  .carusel-btns > i:first-child,
+  .carusel-btns > i:last-child {
+    padding: 0 10px;
+  }
+
+  .carusel-btns > i:first-child:hover,
+  .carusel-btns > i:last-child:hover {
+    color: #121212;
+  }
+
+  .dot-active {
+    color: #121212;
+  }
+
+  .shop-btn {
+    flex-direction: row;
+    gap: 10px;
+  }
 }
 
 @media only screen and (max-width: 680px) {
@@ -1493,5 +1556,13 @@ footer {
     width: 100%;
     font-size: 1.1rem;
     line-height: 24px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .shop-btn {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
   }
 }
