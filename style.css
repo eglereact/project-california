@@ -740,6 +740,16 @@ article > p {
   padding: 0 30px;
 }
 
+.single-item-info {
+  position: sticky;
+  top: 80px;
+  height: 100%;
+}
+
+.single-item-cart:has(.single-item-info) {
+  height: auto;
+}
+
 .single-item-cart {
   display: flex;
   max-width: 900px;
@@ -786,7 +796,7 @@ article > p {
 .single-item-info,
 .single-item-images {
   width: 435px;
-  height: auto;
+  /* height: auto; */
   padding: 30px 0;
 }
 
@@ -1458,6 +1468,10 @@ footer {
   .btn-box {
     text-align: start;
   }
+
+  /* .single-item-cart {
+    flex-direction: column;
+  } */
 }
 
 @media only screen and (max-width: 680px) {
