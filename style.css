@@ -1269,6 +1269,84 @@ footer {
   border-bottom-right-radius: 5px;
 }
 
+/* navbar plus on hover */
+
+.submenu {
+  display: none;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 100%;
+  gap: 40px;
+  left: 0;
+  background-color: #fff;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding: 10px;
+  width: 100%;
+  animation: slideDown 0.3s ease forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.submenu.active {
+  display: flex;
+}
+
+.header-menu > ul > li {
+  height: 105px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.menu-item:hover + .submenu {
+  display: flex;
+}
+
+.submenu-img {
+  cursor: pointer;
+}
+
+.submenu-img > img {
+  width: 300px;
+}
+
+.submenu-img > p {
+  color: #000;
+  text-align: center;
+}
+
+.submenu > ul {
+  list-style-type: none;
+}
+
+.submenu-h3 {
+  font-size: 18px;
+  color: #1ba1e2 !important;
+}
+
+.submenu > ul > li > a {
+  color: #121212;
+  text-decoration: none;
+  line-height: 30px;
+}
+
+.submenu > ul > li > a:hover {
+  text-decoration: underline;
+}
+
 /* responsive */
 
 @media only screen and (max-width: 960px) {

@@ -15,3 +15,14 @@ const menuBtnBox = document.querySelector(".menu-btn-box");
 menuLangBtn.addEventListener("click", () => {
   menuBtnBox.classList.toggle("menu-btn-show");
 });
+
+// on hover submenu stays on screen
+const submenu = document.querySelector(".submenu");
+
+submenu.addEventListener("mouseenter", () => {
+  submenu.classList.add("active");
+});
+
+submenu.addEventListener("mouseleave", () => {
+  submenu.classList.remove("active");
+});
