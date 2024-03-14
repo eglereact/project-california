@@ -26,3 +26,24 @@ submenu.addEventListener("mouseenter", () => {
 submenu.addEventListener("mouseleave", () => {
   submenu.classList.remove("active");
 });
+
+// select gold or silver
+
+const goldBtn = document.querySelector(".gold");
+const silverBtn = document.querySelector(".silver");
+const material = document.querySelector(".material");
+const materialPrice = document.querySelector(".material-price");
+
+silverBtn.addEventListener("click", () => {
+  silverBtn.classList.add("active-btn");
+  goldBtn.classList.remove("active-btn");
+  material.textContent = "Silver";
+  materialPrice.textContent = "270";
+});
+
+goldBtn.addEventListener("click", () => {
+  goldBtn.classList.add("active-btn");
+  silverBtn.classList.remove("active-btn");
+  material.textContent = "Gold";
+  materialPrice.textContent = "520";
+});
