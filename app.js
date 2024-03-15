@@ -47,3 +47,39 @@ goldBtn.addEventListener("click", () => {
   material.textContent = "Gold";
   materialPrice.textContent = "520";
 });
+
+// show hide sidebar
+const toggleBtn = document.querySelector(".sidebar-toggle");
+const closeBtn = document.querySelector(".close-btn");
+const sidebar = document.querySelector(".sidebar");
+const sidebarContainer = document.querySelector(".sidebar-container");
+
+toggleBtn.addEventListener("click", () => {
+  sidebar.classList.add("show-sidebar");
+  sidebarContainer.classList.add("show-bg");
+  document.body.style.overflow = "hidden";
+});
+
+closeBtn.addEventListener("click", () => {
+  sidebar.classList.remove("show-sidebar");
+  sidebarContainer.classList.remove("show-bg");
+  document.body.style.overflow = "auto";
+});
+
+// Hide the sidebar if screen width is 960px or larger
+const checkScreenWidth = () => {
+  let screenWidth = window.innerWidth; // Get the width of the window
+
+  if (screenWidth >= 960) {
+    sidebar.style.display = "none";
+    sidebarContainer.style.display = "none";
+    document.body.style.overflow = "auto";
+  } else {
+    sidebar.style.display = "block";
+    sidebarContainer.style.display = "block";
+    document.body.style.overflow = "hidden";
+  }
+};
+
+checkScreenWidth();
+window.addEventListener("resize", checkScreenWidth);
