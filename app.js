@@ -92,3 +92,20 @@ const sidebarBtnBox = document.querySelector(".sidebar-btn-box");
 sidebarLangBtn.addEventListener("click", () => {
   sidebarBtnBox.classList.toggle("sidebar-btn-show");
 });
+
+// collections button functionality
+
+const collectionBtn = document.querySelector(".collection-btn");
+const collectionsContainer = document.querySelector(".collections-container");
+const plus = document.querySelector(".collection-open");
+
+collectionBtn.addEventListener("click", () => {
+  collectionsContainer.classList.toggle("collection-btn-show");
+  if (plus.textContent === "+") {
+    plus.textContent = "-";
+    console.log("-");
+  } else {
+    plus.textContent = "+";
+    console.log("+");
+  }
+});

@@ -1549,6 +1549,33 @@ footer {
   }
 }
 
+.collections-container {
+  height: 0;
+  transition: height 0.5s ease;
+  overflow: hidden;
+}
+
+.collection-btn-show {
+  height: 200px;
+}
+
+.collections-container > ul {
+  list-style-type: none;
+  margin-left: 10px;
+}
+.collections-container > ul > li > a {
+  width: 100%;
+  text-decoration: none;
+  color: #353535;
+  font-size: 24px;
+  padding: 5px 0;
+  line-height: 40px;
+}
+
+.collections-container > ul > li > a:hover {
+  color: #121212;
+}
+
 @media only screen and (max-width: 620px) {
   /* .icons > select {
     display: none;
