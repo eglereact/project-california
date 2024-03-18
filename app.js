@@ -77,9 +77,18 @@ const checkScreenWidth = () => {
   } else {
     sidebar.style.display = "block";
     sidebarContainer.style.display = "block";
-    document.body.style.overflow = "hidden";
+    // document.body.style.overflow = "hidden";
   }
 };
 
 checkScreenWidth();
 window.addEventListener("resize", checkScreenWidth);
+
+// sidebar language button functionality
+
+const sidebarLangBtn = document.querySelector(".sidebar-lang");
+const sidebarBtnBox = document.querySelector(".sidebar-btn-box");
+
+sidebarLangBtn.addEventListener("click", () => {
+  sidebarBtnBox.classList.toggle("sidebar-btn-show");
+});

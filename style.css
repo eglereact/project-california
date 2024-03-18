@@ -1232,22 +1232,27 @@ footer {
   margin-top: -220px;
 }
 
-.btn-box > ul {
+.btn-box > ul,
+.sidebar-btn-box > ul {
   list-style-type: none;
 }
 
-.btn-box > ul > li {
+.btn-box > ul > li,
+.sidebar-btn-box > ul > li {
   border-bottom: 1px solid #dddddd;
   font-size: 18px;
   padding: 10px;
   text-transform: capitalize;
+  width: 140px;
 }
 
-.btn-box > ul > li:last-child {
+.btn-box > ul > li:last-child,
+.sidebar-btn-box > ul > li:last-child {
   border-bottom: none;
 }
 
-.btn-box > ul > li > a {
+.btn-box > ul > li > a,
+.sidebar-btn-box > ul > li > a {
   text-decoration: none;
   color: #121212;
 }
@@ -1256,17 +1261,20 @@ footer {
   display: block;
 }
 
-.btn-box > ul > li:hover {
+.btn-box > ul > li:hover,
+.sidebar-btn-box > ul > li:hover {
   cursor: pointer;
   background-color: #dddddd;
 }
 
-.btn-box > ul > li:first-child:hover {
+.btn-box > ul > li:first-child:hover,
+.sidebar-btn-box > ul > li:first-child:hover {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
-.btn-box > ul > li:last-child:hover {
+.btn-box > ul > li:last-child:hover,
+.sidebar-btn-box > ul > li:last-child:hover {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -1454,6 +1462,20 @@ footer {
 
 .sidebar-lang:hover {
   text-decoration: underline;
+}
+
+.sidebar-btn-box {
+  width: 140px;
+  background-color: #eeeeee;
+  display: none;
+  margin: 5px 0;
+  border-radius: 5px;
+  position: absolute;
+  margin-top: -263px;
+}
+
+.sidebar-btn-show {
+  display: block;
 }
 
 /* responsive */
